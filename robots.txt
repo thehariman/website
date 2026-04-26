@@ -1,0 +1,82 @@
+# Robots.txt — Thiranex Free Internship Portal (www.thiranex.in)
+# Optimized for Maximum Googlebot & Search Engine Crawl Coverage
+
+# Allow all major search engine crawlers
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /student-login.html
+Allow: /student.html
+Allow: /#domains
+Allow: /#register
+Allow: /#about
+Allow: /#faq
+Allow: /#workflow
+Disallow: /admin.html
+Disallow: /admin-login.html
+Disallow: /api/
+Crawl-delay: 1
+
+# Google
+User-agent: Googlebot
+Allow: /
+Allow: /index.html
+Allow: /student-login.html
+Disallow: /admin.html
+Disallow: /admin-login.html
+Crawl-delay: 0
+
+# Google Image Bot
+User-agent: Googlebot-Image
+Allow: /
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.webp$
+Allow: /*.svg$
+
+# Bing
+User-agent: bingbot
+Allow: /
+Allow: /index.html
+Disallow: /admin.html
+Disallow: /admin-login.html
+Crawl-delay: 1
+
+# Yahoo
+User-agent: Slurp
+Allow: /
+Disallow: /admin.html
+Disallow: /admin-login.html
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+Disallow: /admin.html
+Disallow: /admin-login.html
+
+# Yandex
+User-agent: YandexBot
+Allow: /
+Disallow: /admin.html
+Disallow: /admin-login.html
+
+# Baidu
+User-agent: Baiduspider
+Allow: /
+Disallow: /admin.html
+Disallow: /admin-login.html
+
+# Facebook
+User-agent: facebookexternalhit
+Allow: /
+
+# Twitter
+User-agent: Twitterbot
+Allow: /
+
+# LinkedIn
+User-agent: LinkedInBot
+Allow: /
+
+# Sitemaps
+Sitemap: https://www.thiranex.in/sitemap.xml
