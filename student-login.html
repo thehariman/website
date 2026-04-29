@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.thiranex.in/student-login.html">
+
+    <!-- ✅ Portal Login SEO -->
+    <title>Thiranex Intern Login — Access Dashboard, Certificate & Training</title>
+    <meta name="description"
+        content="Log in to your Thiranex internship dashboard. Track projects, download verified Completion Certificates, and access industry-standard learning modules — all in one place.">
+
+    <!-- Open Graph for Professional Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.thiranex.in/student-login.html">
+    <meta property="og:title" content="Thiranex Intern Login — Dashboard Awaits">
+    <meta property="og:description"
+        content="Access your virtual internship hub. Track progress and download certificates.">
+    <meta property="og:image" content="https://www.thiranex.in/msme-verified-internship-certificate-seal.png">
+
+    <!-- ✅ Schema.org Portal Metadata -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://www.thiranex.in/student-login.html",
+          "url": "https://www.thiranex.in/student-login.html",
+          "name": "Thiranex Intern Login Profile",
+          "isPartOf": { "@id": "https://www.thiranex.in/" }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Thiranex Home",
+              "item": "https://www.thiranex.in/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Intern Login",
+              "item": "https://www.thiranex.in/student-login.html"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <link rel="manifest" href="student.webmanifest">
+
+    <meta name="theme-color" content="#2563EB">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Thiranex">
+    <link rel="apple-touch-icon" href="msme-verified-internship-certificate-seal.png">
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+    <style>
+        :root {
+            --primary: #2563EB;
+            --primary-dark: #1E40AF;
+            --primary-glow: rgba(37, 99, 235, 0.15);
+            --bg-light: #F8FAFC;
+            --card-bg: #FFFFFF;
+            --border-color: rgba(37, 99, 235, 0.1);
+            --text-main: #1E293B;
+            --text-dim: #64748B;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #F0F9FF 0%, #FFFFFF 100%);
+            font-family: 'Outfit', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-main);
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        .background-grid {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(37, 99, 235, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(37, 99, 235, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            z-index: -1;
+            mask-image: radial-gradient(circle at center, black, transparent 90%);
+        }
+
+        .glow {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: var(--primary-glow);
+            filter: blur(150px);
+            border-radius: 50%;
+            z-index: -1;
+            opacity: 0.3;
+            animation: pulse-glow 10s infinite alternate;
+        }
+
+        @keyframes pulse-glow {
+            from { transform: scale(1) translate(-10%, -10%); opacity: 0.2; }
+            to { transform: scale(1.2) translate(10%, 10%); opacity: 0.4; }
+        }
+
+        .login-wrapper {
+            width: 100%;
+            max-width: 480px;
+            padding: 20px;
+            perspective: 1000px;
+        }
+
+        .login-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 32px;
+            padding: 3.5rem 3rem;
+            box-shadow: 
+                0 4px 6px -1px rgba(0, 0, 0, 0.05),
+                0 25px 50px -12px rgba(37, 99, 235, 0.15);
+            animation: card-entry 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        @keyframes card-entry {
+            from { opacity: 0; transform: translateY(40px) rotateX(-5deg); }
+            to { opacity: 1; transform: translateY(0) rotateX(0); }
+        }
+
+        .brand-header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .logo-circle {
+            width: 70px;
+            height: 70px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.25rem;
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.1);
+            position: relative;
+            padding: 4px;
+            border: 1px solid rgba(37, 99, 235, 0.05);
+        }
+
+        .logo-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 50%;
+        }
+
+        .title {
+            font-size: 1.8rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.4rem;
+            color: var(--text-main);
+        }
+
+        .subtitle {
+            font-size: 0.9rem;
+            color: var(--text-dim);
+            font-weight: 500;
+        }
+
+        .form-section {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+
+        .input-wrapper {
+            position: relative;
+        }
+
+        .input-label {
+            display: block;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--text-dim);
+            margin-bottom: 0.6rem;
+            margin-left: 4px;
+        }
+
+        .form-field {
+            width: 100%;
+            background: #F1F5F9;
+            border: 1px solid #E2E8F0;
+            border-radius: 14px;
+            padding: 1rem 1.25rem 1rem 3.2rem;
+            color: var(--text-main);
+            font-size: 1rem;
+            font-family: inherit;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .form-field:focus {
+            outline: none;
+            border-color: var(--primary);
+            background: white;
+            box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+        }
+
+        .input-icon {
+            position: absolute;
+            left: 1.25rem;
+            bottom: 1rem;
+            color: #64748B;
+            font-size: 1.25rem;
+            transition: color 0.3s;
+        }
+
+        .form-field:focus + .input-icon {
+            color: var(--primary);
+        }
+
+        .login-action {
+            width: 100%;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 14px;
+            padding: 1.1rem;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            margin-top: 0.75rem;
+            box-shadow: 0 10px 20px -5px rgba(37, 99, 235, 0.3);
+        }
+
+        .login-action:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px -10px rgba(37, 99, 235, 0.4);
+        }
+
+        .login-action:active {
+            transform: translateY(0);
+        }
+
+        .login-action:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none !important;
+        }
+
+        .status-box {
+            background: #FEE2E2;
+            border: 1px solid #FECACA;
+            color: #B91C1C;
+            padding: 1rem;
+            border-radius: 14px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: none;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .portal-footer {
+            margin-top: 2.5rem;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-dim);
+        }
+
+        .portal-footer a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            transition: opacity 0.3s;
+        }
+
+        .portal-footer a:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        .loading-icon {
+            animation: spin 1s linear infinite;
+        }
+
+        /* Mobile specific adjustments */
+        @media (max-width: 480px) {
+            .login-card {
+                padding: 2.5rem 1.5rem;
+                border-radius: 24px;
+            }
+            .title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background-grid"></div>
+    <div class="glow"></div>
+
+    <div class="login-wrapper">
+        <div class="login-card">
+            <header class="brand-header">
+                <div class="logo-circle">
+                    <img src="msme-verified-internship-certificate-seal.png" alt="Thiranex MSME Verified Internship Program Seal">
+                </div>
+                <h1 class="title">Welcome Back</h1>
+                <p class="subtitle">Sign in to your Thiranex internship dashboard</p>
+            </header>
+
+            <div id="statusBox" class="status-box"></div>
+
+            <form id="loginForm" class="form-section">
+                <div class="input-wrapper">
+                    <label class="input-label">Email Address</label>
+                    <input type="email" id="email" class="form-field" placeholder="Enter your registered email" required autocomplete="email">
+                    <i class="ph-bold ph-envelope-simple input-icon"></i>
+                </div>
+
+                <div class="input-wrapper">
+                    <label class="input-label">Mobile Number / Password</label>
+                    <input type="text" id="mobile" class="form-field" placeholder="Enter your mobile number" required autocomplete="username">
+                    <i class="ph-bold ph-phone input-icon"></i>
+                </div>
+
+                <button type="submit" class="login-action" id="submitBtn">
+                    <span>Continue to Dashboard</span>
+                    <i class="ph-bold ph-arrow-right"></i>
+                </button>
+            </form>
+
+            <footer class="portal-footer">
+                <p>New here? Go to <a href="https://thiranex.in">thiranex.in</a> to register</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="db.js"></script>
+    <script>
+        const form = document.getElementById('loginForm');
+        const btn = document.getElementById('submitBtn');
+        const status = document.getElementById('statusBox');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const email = document.getElementById('email').value.trim();
+            const mobile = document.getElementById('mobile').value.trim();
+
+            // Reset UI
+            status.style.display = 'none';
+            btn.disabled = true;
+            const originalBtn = btn.innerHTML;
+            btn.innerHTML = '<i class="ph-bold ph-spinner-gap loading-icon"></i> Authenticating...';
+
+            try {
+                // Initialize DB if needed
+                if (!DB.data || !DB.data.interns) {
+                    await DB.initialize();
+                }
+
+                // Authentication handshake
+                setTimeout(() => {
+                    const result = DB.login(email, mobile);
+
+                    if (result && !result.error && result.role !== 'admin') {
+                        // Success Redirect to Student Dashboard
+                        window.location.href = 'student.html';
+                    } else if (result && result.multiple) {
+                        // User needs to select a profile (handled in index.html usually)
+                        // For simplicity in a separate page, we usually take the most recent OR redirect to index
+                        status.innerText = 'Multiple profiles found. Please login from the main page.';
+                        status.style.display = 'block';
+                        btn.disabled = false;
+                        btn.innerHTML = originalBtn;
+                    } else if (result && result.role === 'admin') {
+                         status.innerText = 'Admin access restricted. Use Admin Portal.';
+                         status.style.display = 'block';
+                         btn.disabled = false;
+                         btn.innerHTML = originalBtn;
+                    } else {
+                        // Auth Failure
+                        status.innerText = 'Account not found. Verify your details.';
+                        status.style.display = 'block';
+                        btn.disabled = false;
+                        btn.innerHTML = originalBtn;
+                    }
+                }, 800);
+
+            } catch (err) {
+                console.error("Auth Fail:", err);
+                status.innerText = 'Connection error. Please try again later.';
+                status.style.display = 'block';
+                btn.disabled = false;
+                btn.innerHTML = originalBtn;
+            }
+        });
+
+        // Auto-redirect if already logged in
+        window.onload = async () => {
+            await DB.initialize();
+            const user = DB.getCurrentUser();
+            if (user) {
+                if (user.role === 'admin') window.location.href = 'admin.html';
+                else window.location.href = 'student.html';
+            }
+        }
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js').catch(() => {});
+            });
+        }
+    </script>
+</body>
+
+</html>
