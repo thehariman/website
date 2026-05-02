@@ -21,6 +21,7 @@ Crawl-delay: 1
 User-agent: Googlebot
 Allow: /
 Allow: /index.html
+Allow: /python.html
 Allow: /student-login.html
 Disallow: /admin.html
 Disallow: /admin-login.html
