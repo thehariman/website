@@ -20,7 +20,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="manifest" href="student.webmanifest">
+    <link rel="manifest" href="student233.webmanifest">
 
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
@@ -2918,7 +2918,7 @@
 
 
 
-    <script src="db.js"></script>
+    <script src="db1.js"></script>
 
     <script>
 
@@ -5228,6 +5228,21 @@
 
 
     </script>
+    <script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then(registrations => {
+        for (let registration of registrations) {
+            registration.unregister();
+        }
+    });
+
+    caches.keys().then(names => {
+        for (let name of names) {
+            caches.delete(name);
+        }
+    });
+}
+</script>
 
 </body>
 
