@@ -3108,8 +3108,19 @@
 
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('./sw.js').catch(() => {});
-            });
+                <script>
+    if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then(registrations => {
+        for (let registration of registrations) {
+            registration.unregister();
+        }
+    });
+
+    caches.keys().then(names => {
+        for (let name of names) {
+            caches.delete(name);
+        }
+    });            });
         }
 
 
