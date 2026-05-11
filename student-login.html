@@ -323,223 +323,93 @@
     </style>
 </head>
 
-<body>
-    <!-- Maintenance Notice -->
-<div style="
-    position: fixed;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, #0f172a 0%, #111827 100%);
-    z-index: 999999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-">
+<body style="margin:0;font-family:'Outfit',sans-serif;">
     <div style="
-        max-width: 700px;
+        position: fixed;
+        inset: 0;
         width: 100%;
-        background: rgba(255,255,255,0.04);
-        border: 1px solid rgba(255,255,255,0.08);
-        backdrop-filter: blur(18px);
-        border-radius: 28px;
-        padding: 3rem 2rem;
-        text-align: center;
-        box-shadow: 0 25px 80px rgba(0,0,0,0.45);
+        height: 100%;
+        background: linear-gradient(135deg, #0f172a 0%, #111827 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        box-sizing: border-box;
     ">
         <div style="
-            width: 90px;
-            height: 90px;
-            margin: 0 auto 1.8rem;
-            border-radius: 24px;
-            background: linear-gradient(135deg, #2563eb, #1d4ed8);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 10px 40px rgba(37,99,235,0.45);
-        ">
-            <i class="ph-fill ph-wrench" style="font-size: 2.7rem; color: white;"></i>
-        </div>
-
-        <h1 style="
-            color: white;
-            font-size: clamp(2rem, 5vw, 3.2rem);
-            line-height: 1.1;
-            margin-bottom: 1rem;
-            font-weight: 800;
-        ">
-            Website Under Maintenance
-        </h1>
-
-        <p style="
-            color: #cbd5e1;
-            font-size: 1.1rem;
-            line-height: 1.8;
-            max-width: 560px;
-            margin: 0 auto 2rem;
-        ">
-            We are currently performing important updates and improvements to enhance your experience on THIRANEX.
-            <br><br>
-            The platform will be fully live again before <b style="color:#fde047;">8:00 PM IST today</b>.
-        </p>
-
-        <div style="
-            display: inline-flex;
-            align-items: center;
-            gap: 0.75rem;
-            background: rgba(37,99,235,0.12);
-            border: 1px solid rgba(59,130,246,0.25);
-            color: #dbeafe;
-            padding: 1rem 1.4rem;
-            border-radius: 999px;
-            font-weight: 600;
-            font-size: 0.95rem;
+            max-width: 700px;
+            width: 100%;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            backdrop-filter: blur(18px);
+            border-radius: 28px;
+            padding: 3rem 2rem;
+            text-align: center;
+            box-shadow: 0 25px 80px rgba(0,0,0,0.45);
         ">
             <div style="
-                width: 10px;
-                height: 10px;
-                background: #22c55e;
-                border-radius: 50%;
-                box-shadow: 0 0 12px #22c55e;
-            "></div>
+                width: 90px;
+                height: 90px;
+                margin: 0 auto 1.8rem;
+                border-radius: 24px;
+                background: linear-gradient(135deg, #2563eb, #1d4ed8);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0 10px 40px rgba(37,99,235,0.45);
+                font-size: 2.7rem;
+                color: white;
+                font-weight: bold;
+            ">
+                ⚙
+            </div>
 
-            Services will resume shortly
+            <h1 style="
+                color: white;
+                font-size: clamp(2rem, 5vw, 3.2rem);
+                line-height: 1.1;
+                margin-bottom: 1rem;
+                font-weight: 800;
+            ">
+                Website Under Maintenance
+            </h1>
+
+            <p style="
+                color: #cbd5e1;
+                font-size: 1.1rem;
+                line-height: 1.8;
+                max-width: 560px;
+                margin: 0 auto 2rem;
+            ">
+                We are currently performing important updates and improvements to enhance your experience on THIRANEX.
+                <br><br>
+                The platform will be fully live again before <b style="color:#fde047;">8:00 PM IST today</b>.
+            </p>
+
+            <div style="
+                display: inline-flex;
+                align-items: center;
+                gap: 0.75rem;
+                background: rgba(37,99,235,0.12);
+                border: 1px solid rgba(59,130,246,0.25);
+                color: #dbeafe;
+                padding: 1rem 1.4rem;
+                border-radius: 999px;
+                font-weight: 600;
+                font-size: 0.95rem;
+            ">
+                <div style="
+                    width: 10px;
+                    height: 10px;
+                    background: #22c55e;
+                    border-radius: 50%;
+                    box-shadow: 0 0 12px #22c55e;
+                "></div>
+
+                Services will resume shortly
+            </div>
         </div>
     </div>
-</div>
-    <div class="background-grid"></div>
-    <div class="glow"></div>
-
-    <div class="login-wrapper">
-        <div class="login-card">
-            <header class="brand-header">
-                <div class="logo-circle">
-                    <img src="msme-verified-internship-certificate-seal.png" alt="Thiranex MSME Verified Internship Program Seal">
-                </div>
-                <h1 class="title">Welcome Back</h1>
-                <p class="subtitle">Sign in to your Thiranex internship dashboard</p>
-            </header>
-
-            <div id="statusBox" class="status-box"></div>
-
-            <form id="loginForm" class="form-section">
-                <div class="input-wrapper">
-                    <label class="input-label">Email Address</label>
-                    <input type="email" id="email" class="form-field" placeholder="Enter your registered email" required autocomplete="email">
-                    <i class="ph-bold ph-envelope-simple input-icon"></i>
-                </div>
-
-                <div class="input-wrapper">
-                    <label class="input-label">Mobile Number / Password</label>
-                    <input type="text" id="mobile" class="form-field" placeholder="Enter your mobile number" required autocomplete="username">
-                    <i class="ph-bold ph-phone input-icon"></i>
-                </div>
-
-                <button type="submit" class="login-action" id="submitBtn">
-                    <span>Continue to Dashboard</span>
-                    <i class="ph-bold ph-arrow-right"></i>
-                </button>
-            </form>
-
-            <footer class="portal-footer">
-                <p>New here? Go to <a href="https://thiranex.in">thiranex.in</a> to register</p>
-            </footer>
-        </div>
-    </div>
-
-    <script src="db.js"></script>
-    <script>
-        const form = document.getElementById('loginForm');
-        const btn = document.getElementById('submitBtn');
-        const status = document.getElementById('statusBox');
-
-        form.addEventListener('submit', async (e) => {
-            e.preventDefault();
-            
-            const email = document.getElementById('email').value.trim();
-            const mobile = document.getElementById('mobile').value.trim();
-
-            // Reset UI
-            status.style.display = 'none';
-            btn.disabled = true;
-            const originalBtn = btn.innerHTML;
-            btn.innerHTML = '<i class="ph-bold ph-spinner-gap loading-icon"></i> Authenticating...';
-
-            try {
-                // Initialize DB if needed
-                if (!DB.data || !DB.data.interns) {
-                    await DB.initialize();
-                }
-
-                // Authentication handshake
-                setTimeout(() => {
-                    const result = DB.login(email, mobile);
-
-                    if (result && !result.error && result.role !== 'admin') {
-                        // Success Redirect to Student Dashboard
-                        window.location.href = 'student.html';
-                    } else if (result && result.multiple) {
-                        // User needs to select a profile (handled in index.html usually)
-                        // For simplicity in a separate page, we usually take the most recent OR redirect to index
-                        status.innerText = 'Multiple profiles found. Please login from the main page.';
-                        status.style.display = 'block';
-                        btn.disabled = false;
-                        btn.innerHTML = originalBtn;
-                    } else if (result && result.role === 'admin') {
-                         status.innerText = 'Admin access restricted. Use Admin Portal.';
-                         status.style.display = 'block';
-                         btn.disabled = false;
-                         btn.innerHTML = originalBtn;
-                    } else {
-                        // Auth Failure
-                        status.innerText = 'Account not found. Verify your details.';
-                        status.style.display = 'block';
-                        btn.disabled = false;
-                        btn.innerHTML = originalBtn;
-                    }
-                }, 800);
-
-            } catch (err) {
-                console.error("Auth Fail:", err);
-                status.innerText = 'Connection error. Please try again later.';
-                status.style.display = 'block';
-                btn.disabled = false;
-                btn.innerHTML = originalBtn;
-            }
-        });
-
-        // Auto-redirect if already logged in
-        window.onload = async () => {
-            await DB.initialize();
-            const user = DB.getCurrentUser();
-            if (user) {
-                if (user.role === 'admin') window.location.href = 'admin.html';
-                else window.location.href = 'student.html';
-            }
-        }
-        if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.getRegistrations().then(registrations => {
-            for (let registration of registrations) {
-                registration.unregister();
-            }
-        });
-
-        caches.keys().then(names => {
-            for (let name of names) {
-                caches.delete(name);
-            }
-        });
-    }
-/*
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./sw.js').catch(() => {});
-    });
-}
-*/
-    </script>
-    
 </body>
 
 </html>
