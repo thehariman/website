@@ -1,4 +1,4 @@
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyt1ErtiD4v4uRAfMBONSPNPe5srHvpqu8bawEYKza9rxwHyI0HyCddFZxncLQ6vMoV/exec"; // Final GAS URL
+const GOOGLE_SCRIPT_URL = ""; // Final GAS URL
 
 const DB = {
     data: {
