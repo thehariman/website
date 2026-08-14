@@ -1,4 +1,4 @@
-# Robots.txt — Thiranex Free Internship Portal (www.thiranex.in)
+# Robots.txt — InternCircle Free Internship Portal (www.InternCircle.in)
 # Optimized for Maximum Googlebot & Search Engine Crawl Coverage
 
 # Allow all major search engine crawlers
@@ -52,7 +52,7 @@ Disallow: /admin-login.html
 # DuckDuckGo
 User-agent: DuckDuckBot
 Allow: /
-Disallow: /admin.html
+Disallow: /admin.htmlF
 Disallow: /admin-login.html
 
 # Yandex
@@ -80,4 +80,4 @@ User-agent: LinkedInBot
 Allow: /
 
 # Sitemaps
-Sitemap: https://www.thiranex.in/sitemap.xml
+Sitemap: https://www.InternCircle.in/sitemap.xml
